@@ -14,41 +14,172 @@
     <title>Sobre o Conselho - CRO-AP</title>
   </head>
   <body class="bg-gray-100">
-    <header class="bg-white text-red-600">
-      <div class="container mx-auto p-4 flex justify-between items-center">
-        <div class="flex items-center">
-          <img src="./assets/img/logo.png" alt="Logo" class="h-12 mr-2" />
-        </div>
-        <div class="flex items-center">
+    <header class="bg-white">
+      <div class="container mx-auto p-4">
+        <!-- Logo e título -->
+        <div class="flex items-center justify-center md:justify-start mb-2">
           <div class="flex items-center">
-            <a href="tel:9632239409" class="mr-4"
-              ><i class="fas fa-phone"></i> (96) 3223-9409</a
+            <div>
+              <div class="flex items-center">
+                <img
+                  src="./assets/img/logo.png"
+                  alt="Logo CRO-AP"
+                  class="h-16 mr-3"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Informações de contato -->
+        <div
+          class="flex flex-col md:flex-row justify-center md:justify-end space-y-2 md:space-y-0 md:space-x-6"
+        >
+          <div class="flex items-center justify-center md:justify-end">
+            <i class="fas fa-phone text-red-600 mr-2"></i>
+            <span class="text-red-600">(96) 3223-9409</span>
+          </div>
+          <div class="flex items-center justify-center md:justify-end">
+            <i class="fas fa-envelope text-red-600 mr-2"></i>
+            <a
+              href="mailto:secretaria@croap.org.br"
+              class="text-red-600 hover:underline"
             >
-            <a href="mailto:secretaria@croap.org.br" class="mr-4"
-              ><i class="fas fa-envelope"></i> secretaria@croap.org.br</a
-            >
+              secretaria@croap.org.br
+            </a>
           </div>
         </div>
       </div>
     </header>
 
     <nav class="bg-red-600 border-b border-red-600">
-      <div class="container mx-auto p-4 flex justify-between flex-wrap">
-        <div class="flex items-center">
-          <a href="index.html" class="text-white mr-4">
+      <div class="container mx-auto p-4">
+        <!-- Menu para desktop -->
+        <div class="hidden md:flex items-center">
+          <a
+            href="index.html"
+            class="text-white mr-4 hover:text-red-200 transition-colors"
+            id="inicio-link"
+          >
             <i class="fas fa-home mr-1"></i> Início
           </a>
-          <a href="sobre.html" class="text-white mr-4 font-bold"
+          <a
+            href="sobre.html"
+            class="text-white mr-4 hover:text-red-200 transition-colors"
+            id="sobre-link"
             >Sobre o Conselho</a
           >
-          <a href="noticias.html" class="text-white mr-4">Notícias</a>
-          <a href="#" class="text-white mr-4">Fotos e Eventos</a>
-          <a href="#" class="text-white mr-4">Profissionais Inscritos</a>
-          <a href="fiscalizacao.html" class="text-white mr-4">Fiscalização</a>
-          <a href="#" class="text-white mr-4">Agenda</a>
-          <a href="#" class="text-white mr-4">Info Geral</a>
-          <a href="#" class="text-white mr-4">Denúncia</a>
-          <a href="#" class="text-white">SIC / Ouvidoria</a>
+          <a
+            href="noticias.html"
+            class="text-white mr-4 hover:text-red-200 transition-colors"
+            id="noticias-link"
+            >Notícias</a
+          >
+          <a
+            href="#"
+            class="text-white mr-4 hover:text-red-200 transition-colors"
+            >Fotos e Eventos</a
+          >
+          <a
+            href="#"
+            class="text-white mr-4 hover:text-red-200 transition-colors"
+            >Profissionais Inscritos</a
+          >
+          <a
+            href="fiscalizacao.html"
+            class="text-white mr-4 hover:text-red-200 transition-colors"
+            id="fiscalizacao-link"
+            >Fiscalização</a
+          >
+          <a
+            href="#"
+            class="text-white mr-4 hover:text-red-200 transition-colors"
+            >Agenda</a
+          >
+          <a
+            href="#"
+            class="text-white mr-4 hover:text-red-200 transition-colors"
+            >Info Geral</a
+          >
+          <a
+            href="#"
+            class="text-white mr-4 hover:text-red-200 transition-colors"
+            >Denúncia</a
+          >
+          <a href="#" class="text-white hover:text-red-200 transition-colors"
+            >SIC / Ouvidoria</a
+          >
+        </div>
+
+        <!-- Menu hambúrguer para mobile -->
+        <div class="md:hidden flex justify-between items-center">
+          <a
+            href="index.html"
+            class="text-white hover:text-red-200 transition-colors"
+          >
+            <i class="fas fa-home mr-1"></i> Início
+          </a>
+          <button id="menu-toggle" class="text-white focus:outline-none">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+
+        <!-- Menu mobile (inicialmente escondido) -->
+        <div id="mobile-menu" class="md:hidden hidden mt-4 pb-2">
+          <a
+            href="index.html"
+            class="block text-white py-2 hover:text-red-200 transition-colors"
+            id="mobile-inicio-link"
+            >Início</a
+          >
+          <a
+            href="sobre.html"
+            class="block text-white py-2 hover:text-red-200 transition-colors"
+            id="mobile-sobre-link"
+            >Sobre o Conselho</a
+          >
+          <a
+            href="noticias.html"
+            class="block text-white py-2 hover:text-red-200 transition-colors"
+            id="mobile-noticias-link"
+            >Notícias</a
+          >
+          <a
+            href="#"
+            class="block text-white py-2 hover:text-red-200 transition-colors"
+            >Fotos e Eventos</a
+          >
+          <a
+            href="#"
+            class="block text-white py-2 hover:text-red-200 transition-colors"
+            >Profissionais Inscritos</a
+          >
+          <a
+            href="fiscalizacao.html"
+            class="block text-white py-2 hover:text-red-200 transition-colors"
+            id="mobile-fiscalizacao-link"
+            >Fiscalização</a
+          >
+          <a
+            href="#"
+            class="block text-white py-2 hover:text-red-200 transition-colors"
+            >Agenda</a
+          >
+          <a
+            href="#"
+            class="block text-white py-2 hover:text-red-200 transition-colors"
+            >Info Geral</a
+          >
+          <a
+            href="#"
+            class="block text-white py-2 hover:text-red-200 transition-colors"
+            >Denúncia</a
+          >
+          <a
+            href="#"
+            class="block text-white py-2 hover:text-red-200 transition-colors"
+            >SIC / Ouvidoria</a
+          >
         </div>
       </div>
     </nav>
@@ -218,5 +349,49 @@
         <p class="text-gray-600">Transparência e Prestação de Contas</p>
       </div>
     </footer>
+
+    <!-- Adicione este script antes do fechamento da tag </body> -->
+    <script>
+      // Função para destacar o link atual
+      function highlightCurrentPage() {
+        const currentPage = window.location.pathname.split("/").pop();
+
+        // Destaca o link no menu desktop
+        if (currentPage === "index.html" || currentPage === "") {
+          document.getElementById("inicio-link").classList.add("font-bold");
+          document
+            .getElementById("mobile-inicio-link")
+            .classList.add("font-bold");
+        } else if (currentPage === "sobre.html") {
+          document.getElementById("sobre-link").classList.add("font-bold");
+          document
+            .getElementById("mobile-sobre-link")
+            .classList.add("font-bold");
+        } else if (currentPage === "noticias.html") {
+          document.getElementById("noticias-link").classList.add("font-bold");
+          document
+            .getElementById("mobile-noticias-link")
+            .classList.add("font-bold");
+        } else if (currentPage === "fiscalizacao.html") {
+          document
+            .getElementById("fiscalizacao-link")
+            .classList.add("font-bold");
+          document
+            .getElementById("mobile-fiscalizacao-link")
+            .classList.add("font-bold");
+        }
+      }
+
+      // Toggle do menu mobile
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          const mobileMenu = document.getElementById("mobile-menu");
+          mobileMenu.classList.toggle("hidden");
+        });
+
+      // Executa quando a página carrega
+      document.addEventListener("DOMContentLoaded", highlightCurrentPage);
+    </script>
   </body>
 </html>
