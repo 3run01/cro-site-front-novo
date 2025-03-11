@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Fiscalização - CRO-AP</title>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-white text-red-600">
+      <div class="container mx-auto p-4 flex justify-between items-center">
+        <div class="flex items-center">
+          <img src="./assets/img/logo.png" alt="Logo" class="h-12 mr-2" />
+        </div>
+        <div class="flex items-center">
+          <div class="flex items-center">
+            <a href="tel:9632239409" class="mr-4"
+              ><i class="fas fa-phone"></i> (96) 3223-9409</a
+            >
+            <a href="mailto:secretaria@croap.org.br" class="mr-4"
+              ><i class="fas fa-envelope"></i> secretaria@croap.org.br</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="bg-red-600 border-b border-red-600">
+      <div class="container mx-auto p-4 flex justify-between flex-wrap">
+        <div class="flex items-center">
+          <a href="index.html" class="text-white mr-4">
+            <i class="fas fa-home mr-1"></i> Início
+          </a>
+          <a href="sobre.html" class="text-white mr-4">Sobre o Conselho</a>
+          <a href="noticias.html" class="text-white mr-4">Notícias</a>
+          <a href="#" class="text-white mr-4">Fotos e Eventos</a>
+          <a href="#" class="text-white mr-4">Profissionais Inscritos</a>
+          <a href="fiscalizacao.html" class="text-white mr-4 font-bold"
+            >Fiscalização</a
+          >
+          <a href="#" class="text-white mr-4">Agenda</a>
+          <a href="#" class="text-white mr-4">Info Geral</a>
+          <a href="#" class="text-white mr-4">Denúncia</a>
+          <a href="#" class="text-white">SIC / Ouvidoria</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container mx-auto p-6">
+      <div class="bg-white p-6 rounded-lg shadow-lg mb-6">
+        <h1 class="text-2xl font-bold text-red-600 mb-4">Fiscalização</h1>
+
+        <div class="mb-6">
+          <p class="mb-4">
+            A fiscalização é um instrumento de proteção à sociedade.
+          </p>
+
+          <p class="mb-4">
+            O profissional da saúde bucal recebe do Estado, a prerrogativa de
+            somente ele ter a permissão e tutela da lei para atender as
+            necessidade em saúde bucal do paciente. Em contrapartida, a mesma
+            legislação que assegura essa prerrogativa, prevê que os
+            profissionais sejam fiscalizados por seus pares, a fim de oferecer à
+            comunidade uma Odontologia séria, competente e de qualidade.
+          </p>
+
+          <p class="mb-4">
+            O CRO-AP, através de sua Comissão de Fiscalização e sua estrutura
+            funcional, não tem poupado esforços, no sentido de desenvolver uma
+            sistemática que, ao exercer a fiscalização com eficiência, prestigie
+            o profissional cumpridor da lei e, proteja a população de ser
+            enganada por pessoas não habilitadas ao exercício da Odontologia,
+            conhecidas como "ilegais".
+          </p>
+
+          <p class="mb-4">
+            Ao detectar irregularidades no exercício de um profissional da área
+            odontológica, entre em contato e denuncie.
+          </p>
+
+          <div class="bg-gray-100 p-4 rounded-lg my-6">
+            <p class="mb-2">
+              <strong class="text-red-600">Pelo telefone:</strong> (96)
+              3223-9409
+            </p>
+            <p class="mb-2">
+              <strong class="text-red-600">Denúncia whatsapp:</strong> (96) 9
+              8801-0057
+            </p>
+            <p>
+              <strong class="text-red-600">Pelo email:</strong>
+              fiscalizacao@croap.org.br
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h2 class="text-xl font-bold text-red-600 mb-4">Formulário</h2>
+
+        <form
+          id="denuncia-form"
+          action="#"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+            <div>
+              <label for="nome" class="block text-gray-700 font-semibold mb-2"
+                >Nome</label
+              >
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                required
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+              />
+            </div>
+
+            <div>
+              <label for="cpf" class="block text-gray-700 font-semibold mb-2"
+                >CPF*</label
+              >
+              <input
+                type="text"
+                id="cpf"
+                name="cpf"
+                required
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+              />
+            </div>
+
+            <div>
+              <label
+                for="telefone"
+                class="block text-gray-700 font-semibold mb-2"
+                >Telefone</label
+              >
+              <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+              />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+            <div>
+              <label
+                for="endereco"
+                class="block text-gray-700 font-semibold mb-2"
+                >Endereço</label
+              >
+              <input
+                type="text"
+                id="endereco"
+                name="endereco"
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+              />
+            </div>
+
+            <div>
+              <label for="email" class="block text-gray-700 font-semibold mb-2"
+                >E-mail</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+              />
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <label for="mensagem" class="block text-gray-700 font-semibold mb-2"
+              >Mensagem</label
+            >
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="6"
+              required
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+            ></textarea>
+          </div>
+
+          <div class="mb-4">
+            <label for="arquivo" class="block text-gray-700 font-semibold mb-2"
+              >Anexar arquivo</label
+            >
+            <input
+              type="file"
+              id="arquivo"
+              name="arquivo"
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600"
+            />
+          </div>
+
+          <div class="mb-6">
+            <div class="g-recaptcha" data-sitekey="your-recaptcha-site-key">
+              <!-- Substitua por seu próprio reCAPTCHA -->
+              <div class="border border-gray-300 rounded-md p-3 inline-block">
+                <input type="checkbox" id="recaptcha-checkbox" class="mr-2" />
+                <label for="recaptcha-checkbox">Não sou um robô</label>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <button
+              type="submit"
+              class="bg-red-600 text-white px-6 py-3 rounded-md font-bold hover:bg-red-700 transition"
+            >
+              Enviar formulário
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="bg-white shadow mt-6">
+      <div class="container mx-auto p-4 text-center">
+        <p class="text-gray-600">
+          Av. Antônio Coelho de Carvalho, Nº 2487 - Santa Rita, Amapá - AP
+        </p>
+        <p class="text-gray-600">Horário: Seg. à Sex. 08:00 às 14:00</p>
+        <div class="flex justify-center mt-2">
+          <a href="#" class="text-red-600 mx-2"
+            ><i class="fab fa-facebook"></i> Facebook</a
+          >
+          <a href="#" class="text-red-600 mx-2"
+            ><i class="fab fa-instagram"></i> Instagram</a
+          >
+        </div>
+        <p class="text-gray-600">Transparência e Prestação de Contas</p>
+      </div>
+    </footer>
+
+    <!-- Script do reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </body>
+</html>
